@@ -1,0 +1,198 @@
+/*Controller Image*/
+.controller {
+	background: url('F710.png');
+	height: 680px;
+	width: 750px;
+	margin-left: -375px;
+	margin-top: -285px;
+	background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*Analog Sticks*/
+.stick {
+	position: absolute;
+	background: url('stick.png') repeat scroll -97px 0px transparent;
+	height: 97px;
+	width: 97px;
+	background-size: cover;
+}
+.stick.pressed {
+	background: url('stick.png') repeat scroll 0px 0px transparent;
+	background-size: cover;
+}
+.stick.left {
+	top: 471px;
+    left: 219px;
+}
+.stick.right {
+	top: 473px;
+    left: 443px;
+}
+
+/*Face Buttons*/
+.abxy {
+	width: 222px;
+    display: block;
+    position: absolute;
+    top: 218px;
+    right: 156px;
+}
+.button{
+    position: absolute;
+    background: url(abxy.png);
+    width: 56px;
+    height: 55px;
+    background-size: 400%;
+    background-repeat-y: no-repeat;
+}
+.button.pressed{
+    margin-top: 0px;
+    opacity: 1;
+    background-position-y:-55px;
+}
+.a{
+    background-position: 0 0;
+    top: 207px;
+    right: -36px;
+}
+.b{
+    background-position: -56px 0;
+    top: 150px;
+    left: 259px;
+}
+.x{
+    background-position: -112px 0;
+    left: 145px;
+    top: 149px;
+}
+.y{
+    background-position: 56px 0;
+    top: 92px;
+    left: 202px;
+}
+/*D-Pad Highlights*/
+.dpad{
+    position: absolute;
+    width: 110px;
+    height: 111px;
+    top: 238px;
+    left: 179px;
+}
+.face{
+    background: url(dpad.png);
+    position: absolute;
+    opacity: 0;
+}
+.face.pressed{
+    opacity: 1;
+}
+.face.up {
+    background-position: 0px 0;
+    background-size: 200%;
+    left: -65px;
+    top: 91px;
+    width: 89px;
+    height: 63px;
+}
+.face.down {
+    left: -65px;
+    background-size: 200%;
+    bottom: -105px;
+    width: 89px;
+    height: 63px;
+    background-position: -89px 0px;
+}
+.face.left {
+    background-position: 0 -63px;
+    background-size: 286%;
+    width: 62px;
+    height: 89px;
+    top: 109px;
+    left: -83px;
+}
+.face.right {
+    background-position: 0 -152px;
+    background-size: 286%;
+    width: 62px;
+    height: 89px;
+    top: 109px;
+    right: 69px;
+}
+
+/*Triggers & Bumpers*/
+.triggers{
+    width: 523px;
+    height: 72px;
+    position: absolute;
+    left: 120px;
+	top: 47px;
+}
+.trigger{
+    width: 67px;
+    height: 70px;
+    opacity: 0;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.trigger.left{
+	background-image: url(lt.png);
+}
+.trigger.right{
+	background-image: url(rt.png);
+	right:0px;
+	top:2px;
+}
+
+.bumper{
+    width: 84px;
+    height: 53px;
+    opacity: 0;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.bumpers{
+    position: absolute;
+    width: 547px;
+    height: 54px;
+    left: 108px;
+    top: 136px;
+}
+.bumper.pressed{
+    opacity: 1;
+}
+.bumper.left{
+    background-image: url(lb.png);
+}
+.bumper.right{
+    background-image: url(rb.png);
+    right:0px;
+	top:1px;
+}
+
+.arrows{
+    position: absolute;
+    width: 201px;
+    height: 28px;
+    top: 335px;
+    left: 280px;
+}
+.back, .start{
+    background: url(backstart.png);
+    width: 42px;
+    height: 28px;
+    opacity: 0;
+    background-size: 200%;
+}
+.back.pressed, .start.pressed{
+    opacity: 1;
+}
+.back{
+    float: left;
+}
+.start{
+    background-position: 42px 0px;
+    float: right;
+}
